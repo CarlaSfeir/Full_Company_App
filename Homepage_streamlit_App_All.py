@@ -43,7 +43,7 @@ selected = option_menu(
 #page.app()
 
 if selected == "Home":
-    image = Image.open("C:\\Users\\Christian\\Desktop\\sky is the limit.png")
+    image = Image.open("sky is the limit.png")
 
     st.image(image, caption='Surpassing the Boundaries')
 
@@ -421,7 +421,7 @@ if selected == "Contact":
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    local_css("C:\\Users\\Christian\\Desktop\\AUB\\5 - SPRING 2021-2022\MSBA 370 - Wissam Sammouri\\STREAMLIT_PROJECT_CARLASFEIR\\Contact_Form_Style.txt")
+    local_css("Contact_Form_Style.txt")
 
 
 

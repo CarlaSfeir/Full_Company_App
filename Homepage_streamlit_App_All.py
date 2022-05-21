@@ -62,7 +62,7 @@ if selected == "SalesDash":
 # ---- READ CSV ----
     @st.cache(allow_output_mutation=True)
     def get_data_from_excel():
-        df = pd.read_excel("C:\\Users\\Christian\\Sales Report 2021 - final.xlsx")
+        df = pd.read_excel("Sales Report 2021 - final - Copy.xlsx")
         df["hour"] = pd.to_datetime((df["Time"]).astype(str)).dt.hour
         return df
 
